@@ -39,21 +39,7 @@ inputs:
     description: 'Inline BuildKit config'
     required: false
 
-outputs:
-  name:
-    description: 'Builder name'
-  driver:
-    description: 'Builder driver'
-  endpoint:
-    description: 'Builder node endpoint'
-  status:
-    description: 'Builder node status'
-  flags:
-    description: 'Builder node flags (if applicable)'
-  platforms:
-    description: 'Builder node platforms available (comma separated)'
 
 runs:
   using: 'node12'
   main: 'dist/index.js'
-  post: 'dist/index.js'
